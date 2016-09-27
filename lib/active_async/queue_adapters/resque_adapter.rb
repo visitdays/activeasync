@@ -9,7 +9,7 @@ module ActiveAsync
 
       class JobWrapper
         class_attribute :queue
-        self.queue = :general
+        self.queue = :high
 
         class << self
           def perform(*args)
